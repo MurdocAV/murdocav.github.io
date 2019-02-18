@@ -5,6 +5,11 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+h1 {
+	color: #EAE7DC;
+	text-align: center;
+}
+
 tr, td {
 	color: #EAE7DC;
 	text-align: center;
