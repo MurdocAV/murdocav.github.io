@@ -10,6 +10,10 @@ h1 {
 	text-align: center;
 }
 
+table {
+	border-style: groove;
+}
+
 tr, td {
 	color: #EAE7DC;
 	text-align: center;
@@ -53,4 +57,21 @@ ul {
 
 .tableData {
 	font-weight: bold;
+}
+
+a {
+	position: fixed;
+	width: 100%;
+	bottom: 25%;
+	font-size: 22px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	color:#41B3A3;
+	
+}
+
+a:hover {
+	color: grey;
+	opacity: 50%;
 }
