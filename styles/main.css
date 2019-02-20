@@ -49,15 +49,21 @@ ul li a {
 	opacity: 0%;
 }
 
-ul li a:hover:not(.active) {
-	color: #C38D9E;
-	opacity: 70%;
-}
-
 ul li a.active {
 	color: #41B3A3;
 	opacity: 90%;
 }
+
+ul li a.active:hover {
+	color: #369689;
+	opacity: 50%;
+}
+
+ul li a:hover:not(.active){
+	color: #C38D9E;
+	opacity: 70%;
+}
+
 
 footer {
    position: fixed;
@@ -66,5 +72,27 @@ footer {
    width: 100%;
    color: #EAE7DC;
    text-align: center;
+}
+
+.sprintTags {
+	display: flex;
+	flex-direction: column;
+	color: #EAE7DC;
+	font-size: 20px;
+	padding-bottom: 5px;
+	text-decoration: none;
+}
+
+#sprintTagsList {
+	display: block;
+	position: absolute;
+	bottom: 45%;
+	text-align: center;
+	width: 100%;
+}
+
+#sprintTagsList a:hover{
+	color: #C38D9E;
+	opacity: 70%;
 }
 
