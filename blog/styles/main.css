@@ -45,20 +45,6 @@ ul {
 	list-style-type: none;
 }
 
-
-
-.time10to4{
-	color: #D8C3A5;
-}
-
-.time6to12 {
-	color: #8E8D8A;
-}
-
-.tableData {
-	font-weight: bold;
-}
-
 a {
 	position: fixed;
 	width: 100%;
@@ -74,4 +60,54 @@ a {
 a:hover {
 	color: grey;
 	opacity: 50%;
+}
+
+.time10to4{
+	color: #D8C3A5;
+}
+
+.time5to12 {
+	color: #8E8D8A;
+}
+
+.tableData {
+	font-weight: bold;
+}
+
+.inline {
+	display: inline; /* the default for span */
+	width: 100px;
+	height: 100px;
+	padding: 5px;
+	border: 1px solid pink;  
+	background-color: #41B3A3; 
+}
+
+.inlineBlock {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	padding: 5px;
+	border: 1px solid pink;  
+	background-color: #41B3A3; 
+}
+
+.block {
+	display: block;
+	width: 100px;
+	height: 100px;
+	padding: 5px;
+	border: 1px solid pink;  
+	background-color: #41B3A3; 
+}
+
+.differences {
+	color: #6fc8dc;
+}
+
+#topLeftAnchor {
+	position: absolute;
+	width: 15%;
+	top: 3.225%;
+	float: left;
 }
