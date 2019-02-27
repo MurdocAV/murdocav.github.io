@@ -1,27 +1,50 @@
   <!DOCTYPE html>
 <html>
   <head>
-    <title>Stories and Legends (PAGE title) </title>
+    <title>Sprint 3 Cultural</title>
     <meta charset="UTF-8">
     <link href="styles/main.css" rel="stylesheet" type="text/css">
+	<script>
+			
+		function changeTitle(newTitle) {
+			var mainElement = document.querySelector("#title");
+			mainElement.innerHTML = newTitle;
+		}
+			
+		var newTitle ="How can I Improve my Skills?";
+			
+	</script>
+	
   </head>
-  
   <body>
-    <h1>The Story of Te Houtaewa (PAGE heading)</h1>
-    <h2>E kore e mau i a koe, he wae kai pakiaka. <em>A foot accustomed to running over roots makes the speediest runner.</em> (Optional SUB title) </h2>
-    <h3>10 November 2010</h3>
-    
-    <p>
-      Te Houtaewa was the fastest runner of his day and played many pranks on his peoples enemies. One morning his mother wanted kumara for the hangi (earth oven) and asked Te Houtaewa to go to the gardens at Te Kao, a short distance away. He agreed to fetch the kumara and told his mother to prepare the hangi.
-    </p>
-    <p>
-      Instead of going to the nearby gardens, Te Houtaewa set off for Ahipara as he wanted to annoy some Te Rarawa people who lived there. Carrying two large baskets for the kumara, he ran like the wind, completing the journey over the hard sands of Te Oneroa a Tohe (Ninety Mile Beach) in the few hours it takes a good hangi to heat up properly. On reaching Ahipara, he went straight to the people's kumara pataka (storehouse for the sweet potatoes) situated at the foot of the hill Whangatauatia.
-    </p>
-    <p>
-      While Te Houtaewa was filling his baskets with kumara he was spotted stealing the kai (food). He was immediately recognised.
-    </p>
-    
-    <!-- this is a comment. -->
-  
+  	<div id="changeTitleDiv">
+		<h1 style="opacity: 1;" id="title">What is Emotional Intelligence?</h1>
+		<button style="opacity: 1;" id="changeTitleBtn" onclick="changeTitle(newTitle)">Start your learning</button>
+	</div>
+	
+	<br>
+	<p><strong>Emotional Intelligence is the capacity to be aware of, control, and express one's emotions, and to handle interpersonal relationships judiciously and empathetically.</strong></p>
+		<p>This means to have a good sense of judgment and a ready comprehension of other people's states.</p>
+		
+	<br>
+	<p><strong><em>More importantly, how can we improve our emotional intelligence?</strong></em></p>
+	
+		<p><strong>Attention Training:</strong></p>
+			<p>Become aware of yourself, your body, your emotions, your presence. This can help you better organize 
+			your thoughts and attention.</p>
+		<p><strong>Self Knowledge & Mastery:</strong></p>
+			<p>Know what is occupying you internally, your mind importantly. This allows you to understand what's going on, 
+			allowing you to be more present (and hopefully better engage) in the situation.</p>
+		<p><strong>Creating Useful Mental Habits:</strong></p>
+			<p>Habits are (almost) like functions! Usefully you can defend against what is known as
+			the "Super Ego", the critical judging part of your mind. Defending against it while being present allows you to clearly
+			see your strengths and weaknesses.</p>
+	
+	<br>	
+	<p>Emotional intelligence has been studied to be influential for a lot of positive traits. Daniel Goleman, goes on about it's impact and the results of his studies, in his 1996 book. Goleman goes on to describes Emotional Intelligence.
+	He found that many higher ups throughout society possessed a good grasping of skills that require emotional intelligence, furthermore he found that one can improve it to better themselves. In his experimental studies he found that
+	emotional abilities influenced consumers when they were deciding to buy products. One would be foolish to dismiss this knowledge and not read more into it.</p>
+	
+  	<a style="opacity: 1;" id="returnAnchor" href="../learning.html">Take Me Back</a>
   </body>
 </html>
