@@ -105,16 +105,17 @@ a:hover {
 	color: #6fc8dc;
 }
 
+.hideInitailly {
+	opacity: 0;
+}
+
+#changeTitleDiv {
+	text-align: center;
+}
+
 #topLeftAnchor {
 	position: absolute;
 	width: 15%;
 	top: 3.225%;
 	float: left;
-}
-
-#changeTitleBtn {
-}
-
-#changeTitleDiv {
-	text-align: center;
 }
