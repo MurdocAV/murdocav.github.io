@@ -13,6 +13,11 @@ h1 {
 	text-align: center;
 }
 
+h2 {
+	color: #000000;
+	text-align: center;
+}
+
 h3 {
   color: #000000;
 }
@@ -62,6 +67,15 @@ a {
 	text-decoration: none;
 	color:#41B3A3;
 	
+}
+
+footer {
+   position: relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: #813772;
+   text-align: center;
 }
 
 a:hover {
