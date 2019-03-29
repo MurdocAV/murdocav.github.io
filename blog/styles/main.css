@@ -130,6 +130,16 @@ a:hover {
 	opacity: 0;
 }
 
+.returnSc3 {
+    position: absolute;
+    width: 10%;
+    bottom: 85%;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #41B3A3;
+}
 #changeTitleDiv {
 	text-align: center;
 }
