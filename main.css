@@ -133,7 +133,8 @@ footer {
 #sprintTagsList {
 	display: block;
 	position: absolute;
-	bottom: 45%;
+	bottom: 50%;
+	margin: 25px;
 	text-align: center;
 	width: 100%;
 }
