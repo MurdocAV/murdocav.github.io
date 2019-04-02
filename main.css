@@ -127,14 +127,18 @@ footer {
 	color: #062F4F;
 	font-size: 20px;
 	padding-bottom: 5px;
-	text-decoration: none;
+	text-decoration: none!important;
+}
+
+#sprintTagsContainter {
+	text-align: center;
 }
 
 #sprintTagsList {
-	display: block;
+	text-decoration: none;
 	position: absolute;
-	bottom: 35%;
-	margin: 25px;
+	bottom: 25%!important;
+	margin: 0px!important;
 	text-align: center;
 	width: 100%;
 }
