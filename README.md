@@ -6,4 +6,4 @@ My learning blog for the 16 week bootcamp on Web Development with Dev-Academy. 1
 
 Redoing this space...
 
-Making more fluid website
+Making a much more fluid website
