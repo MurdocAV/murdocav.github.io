@@ -96,7 +96,7 @@ footer {
 .navContainer {
   display: block;
   width: 100%;
-  height: 50px;
+  height: 5.187vh;
 }
 
 .navContainer nav ul li a {
@@ -126,7 +126,7 @@ footer {
 	flex-direction: column;
 	color: #062F4F;
 	font-size: 20px;
-	padding-bottom: 5px;
+	padding-bottom: 0.5187vh;
 	text-decoration: none!important;
 }
 
