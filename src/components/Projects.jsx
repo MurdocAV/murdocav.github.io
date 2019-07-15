@@ -24,7 +24,7 @@ class Projects extends React.Component {
           <Card.Header>Premium Content || Animations</Card.Header>
           <Card.Body>
             <Card.Title>
-              Based in Auckland. <span>Help me get on on a payroll.</span>
+              Based in Auckland. <span>This is not a production test.</span>
             </Card.Title>
             <Button onClick={() => this.goTo()} variant="primary">
               Upcoming page
