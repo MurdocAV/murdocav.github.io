@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../App.css";
 
 class Learning extends React.Component {
@@ -16,33 +17,33 @@ class Learning extends React.Component {
         </h2>
         <div id="sprintTagsContainter">
           <div id="sprintTagsList">
-            <a className="sprintTags" href="blog/sprint1-cultural.html">
+            <Link className="sprintTags" href="blog/sprint1-cultural.html">
               Sprint 1 Cultural
-            </a>
-            <a className="sprintTags" href="blog/sprint1-technical.html">
+            </Link>
+            <Link className="sprintTags" href="blog/sprint1-technical.html">
               Sprint 1 Technical
-            </a>
-            <a className="sprintTags" href="blog/sprint2-cultural.html">
+            </Link>
+            <Link className="sprintTags" href="blog/sprint2-cultural.html">
               Sprint 2 Cultural
-            </a>
-            <a className="sprintTags" href="blog/sprint2-technical.html">
+            </Link>
+            <Link className="sprintTags" href="blog/sprint2-technical.html">
               Sprint 2 Technical
-            </a>
-            <a className="sprintTags" href="blog/sprint3-cultural.html">
+            </Link>
+            <Link className="sprintTags" href="blog/sprint3-cultural.html">
               Sprint 3 Cultural
-            </a>
-            <a className="sprintTags" href="blog/sprint3-technical.html">
+            </Link>
+            <Link className="sprintTags" href="blog/sprint3-technical.html">
               Sprint 3 Technical
-            </a>
-            <a className="sprintTags" href="blog/sprint4-cultural.html">
+            </Link>
+            <Link className="sprintTags" href="blog/sprint4-cultural.html">
               Sprint 4 Cultural
-            </a>
-            <a className="sprintTags" href="blog/sprint4-technical.html">
+            </Link>
+            <Link className="sprintTags" href="blog/sprint4-technical.html">
               Sprint 4 Technical
-            </a>
-            <a className="sprintTags" href="blog/sprint5-cultural.html">
+            </Link>
+            <Link className="sprintTags" href="blog/sprint5-cultural.html">
               Sprint 5 Cultural
-            </a>
+            </Link>
           </div>
         </div>
       </React.Fragment>

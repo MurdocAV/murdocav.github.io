@@ -14,7 +14,8 @@ class Projects extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Card
+        <Card  
+          className="projectCards"
           onClick={
             this.state.outsideLink &&
             window.location.replace("https://murdocav.github.io/home/")

@@ -121,6 +121,12 @@ footer {
   bottom: 50%;
 }
 
+.projectCards{
+  margin-top: 12.5vh;
+  margin-left: 1.75vw;
+  margin-right: 1.75vw;
+}
+
 .sprintTags {
   display: flex;
   flex-direction: column;
