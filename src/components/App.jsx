@@ -1,11 +1,8 @@
 import React from 'react'
 import Center from './Center'
-import Navigation from './Navigation'
-import Projects from './Projects'
-import Blank from './Blank'
 import ImageDrawer from './ImageDrawer'
 import AppBar from './AppBar'
-import {HashRouter, Route} from 'react-router-dom'
+import {HashRouter} from 'react-router-dom'
 
 //TODO: Test out Material U.I.; 
 //  1. Use Material's grid to make layered mobile first Responsive U.I.
