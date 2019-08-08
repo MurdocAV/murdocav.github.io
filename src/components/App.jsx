@@ -16,9 +16,9 @@ class App extends React.Component {
   render () {
     return (
       <HashRouter>
-        {/* <AppBar className="appBar"></AppBar> */}
+        <AppBar className="appBar"></AppBar>
         <Center></Center>
-        {/* <div className='imageDrawer'><ImageDrawer /></div> */}
+        <div className='imageDrawer'><ImageDrawer /></div>
       </HashRouter>
     )
   }
