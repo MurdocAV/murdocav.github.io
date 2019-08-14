@@ -63,7 +63,7 @@ export default function AdvancedGridList() {
               titlePosition="bottom"
               subtitle={tile.subtitle}
               actionIcon={
-                <IconButton href={tile.url} className="spotThis" onClick={() => console.log('helloThere')} aria-label={`star ${tile.title}`} className={classes.icon}>
+                <IconButton href={tile.url} aria-label={tile.title} className={classes.icon}>
                   <StarBorderIcon />
                 </IconButton>
               }

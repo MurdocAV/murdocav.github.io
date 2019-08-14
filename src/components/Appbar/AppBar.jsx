@@ -21,7 +21,6 @@ const useStyles = makeStyles(theme => ({
 
 export default function ButtonAppBar(props) {
   const classes = useStyles();
-  props.open
   return (
     <div className='appBar'>
       <AppBar position="static" className='appBarStart' color='inherit'>
