@@ -1,8 +1,8 @@
 import React from 'react'
 import Center from './Center'
+import Header from './Appbar/Header'
 import ImageDrawer from './ImageDrawer'
-import AppBar from './AppBar'
-import {HashRouter} from 'react-router-dom'
+import {HashRouter, Route} from 'react-router-dom'
 
 //TODO: Test out Material U.I.; 
 //  1. Use Material's grid to make layered mobile first Responsive U.I.
@@ -16,7 +16,7 @@ class App extends React.Component {
   render () {
     return (
       <HashRouter>
-        <AppBar className="appBar"></AppBar>
+        <Header />
         <Center></Center>
         <div className='imageDrawer'><ImageDrawer /></div>
       </HashRouter>
