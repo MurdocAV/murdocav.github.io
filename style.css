@@ -24,6 +24,11 @@ body {
   margin: 0;
 }
 
+.noDecoration {
+  color: inherit;
+  text-decoration: none;
+}
+
 #app {
   display: -ms-grid;
   display: grid;
@@ -99,11 +104,24 @@ body {
   grid-area: main;
 }
 
+/* dev styling for testing functionality */
+.main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: main;
+}
+
 .typewriter {
   padding: 0px;
   font-size: 2em;
   margin: 1em;
   padding: 1em;
+}
+
+/* Card */
+.cardMUI {
+  margin-top: 10vh;
 }
 
 /* 4. Projects */
@@ -142,6 +160,19 @@ body {
 
 .appBarText {
   color: white !important;
+}
+
+.appBarText :hover {
+  opacity: 0.5;
+}
+
+.appBarTitle {
+  cursor: pointer;
+  color: white;
+}
+
+.appBarTitle:hover {
+  opacity: 0.5;
 }
 
 /* Google Fonts */
