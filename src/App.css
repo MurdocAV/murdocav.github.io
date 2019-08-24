@@ -1,163 +1,353 @@
-@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
+@import url("https://fonts.googleapis.com/css?family=Ma+Shan+Zheng&display=swap");
+/* ===============================
+  Contents:
+    0. Mixins & Variables
+    1. Globals
+    2. Navigation
+    3. Main content
+=============================== */
+/* 0. Mixins & Variables */
+/* 1. Globals */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+html {
+  text-align: center;
+  font-family: 'Ma Shan Zheng', cursive;
+  text-align: center;
+  overflow: hidden;
+  background-color: #3b3c40;
+}
 
-/* 
-Colours for use:
-
-	Hex	|         Name	  	      | Shade
-	
-	#F19CBB = Amaranth - Pink
-	#FFD4D4 = Cosmos - Pink
-	#B82601 = Harley Davidson Orange - Orange
-	#00A86B = Jade - Green
-	#062F4F = Deep Azure/ Cyan-Blue	- Blue
-	
-*/
+.appBar {
+  width: 100vw;
+}
 
 body {
-  background-color: #ffd4d4;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(240)'%3E%3Cstop offset='0' stop-color='%23ffd4d4'/%3E%3Cstop offset='1' stop-color='%23f2e6e6'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='540' height='450' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.1'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
-  background-attachment: fixed;
-  background-size: cover;
-  /* background by SVGBackgrounds.com */
-  background-repeat: no-repeat;
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0px !important;
+  margin: 0;
 }
 
-p {
-  position: fixed;
-  text-align: center;
-  bottom: 50%;
-  width: 100%;
-  color: #062f4f;
-}
-
-ol {
-  display: flex;
-  flex-direction: column;
-  color: #062f4f;
-  position: fixed;
-  text-align: center;
-  list-style-type: none;
-  width: 100%;
-  bottom: 70%;
-}
-
-ol li {
-  text-align: inherit;
-}
-
-ul {
-  display: inline-block;
-  text-align: center;
-  width: 100%;
-  list-style-type: none;
-}
-
-ul li {
-  margin-right: 20px;
-  display: inline;
-}
-
-ul li a {
-  font-family: "Indie Flower", cursive;
-  font-size: 30px;
+.noDecoration {
+  color: inherit;
   text-decoration: none;
-  color: #062f4f;
-  opacity: 1;
 }
 
-ul li a.active {
-  color: #00a86b;
-  opacity: 0.9;
+#app {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  height: 100vh;
+      grid-template-areas: "header header header header" "main  main main main" "projects  projects projects projects";
+  -ms-grid-rows: 1fr 2fr 4fr;
+      grid-template-rows: 1fr 2fr 4fr;
+  -ms-grid-columns: 1fr 2fr 4fr;
+      grid-template-columns: 1fr 2fr 4fr;
 }
 
-ul li a.active:hover {
-  color: gray;
-  opacity: 0.5;
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-ul li a:hover:not(.active) {
-  color: #b82601;
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* 2. Navigation */
+.navigation {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: header;
+  font-size: 2em;
+  padding-top: 2.5vh;
+  padding-left: 25vw;
+  padding-right: 25vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.navigation a {
+  color: #90b974;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  color: #A1FFD2;
   opacity: 0.7;
 }
 
-footer {
-  font-family: "Indie Flower", cursive;
-  font-size: 22px;
-  position: fixed;
+.navigation .active {
+  color: #5a7449;
+}
+
+/* 3. Main component */
+.mainComponent {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: main;
+}
+
+/* dev styling for testing functionality */
+.main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: main;
+}
+
+.typewriter {
+  padding: 0px;
+  font-size: 2em;
+  margin: 1em;
+  padding: 1em;
+}
+
+/* Card */
+.cardMUI {
+  margin-top: 10vh;
+}
+
+/* 4. Projects */
+.projects {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: projects;
+}
+
+.formMUIContainer {
+  color: white;
+  grid-area: projects;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 450px;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: projects;
+  padding-bottom: 2.5vh;
+}
+
+.formMUIContainer .formMUI {
+  width: 450px;
+}
+
+.formMUIContainer .formMUI .two {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.formMUIContainer .formMUI .oneHalf {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.formMUIContainer .formMUI .one {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.formMUIContainer .formMUI .message {
+  width: 400px;
+  height: 3.5625em;
+}
+
+.insetDivider {
+  color: black;
+}
+
+.formMessage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 2em;
+  color: white;
+}
+
+.link:hover {
+  color: green;
+  opacity: 0.6;
+}
+
+/* Blank */
+.blank {
+  grid-area: blank;
+  display: none;
+}
+
+.imageDrawer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 450px;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: projects;
+  padding-bottom: 2.5vh;
+}
+
+.MuiGridListTile-tile {
+  -webkit-box-shadow: inset 5px 0 10px -5px #635e61, inset -5px 0 10px -5px #635e61, inset 0px -5px 10px -2px #635e61, 0 0 1px 2px #635e61, 0 0 1px 2px #635e61;
+          box-shadow: inset 5px 0 10px -5px #635e61, inset -5px 0 10px -5px #635e61, inset 0px -5px 10px -2px #635e61, 0 0 1px 2px #635e61, 0 0 1px 2px #635e61;
+  -webkit-box-shadow: 5px 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+          box-shadow: 5px 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+/* =============================
+ Form Styling of MU-UI form 
+  * nb styling is after
+    react components
+============================== */
+.MuiInputBase-root {
+  color: #c774e8;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+}
+
+.MuiFormLabel-root {
+  color: #ff6ad5;
+}
+
+.MuiFocused {
+  color: #8795e8;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: rgba(148, 208, 255, 0.23) !important;
+}
+
+.MuiButton-root {
+  color: #ad8cff;
+}
+
+.toolBar {
+  background-color: #c774e8;
+}
+
+.appBarText {
+  color: #94d0ff !important;
+}
+
+.appBarText :hover {
+  opacity: 0.5;
+}
+
+.appBarTitle {
+  cursor: pointer;
+  color: #94d0ff;
+}
+
+.appBarTitle:hover {
+  opacity: 0.5;
+}
+
+/* Google Fonts */
+/* Global */
+html {
+  min-height: 50%;
+  overflow: hidden;
+}
+
+body {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: 'Anonymous Pro', monospace;
+}
+
+.line-1 {
+  position: relative;
+  top: 50%;
+  width: 2em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  font-size: 100%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+/* Animation */
+.anim-typewriter {
+  -webkit-animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
+          animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@-webkit-keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 23em;
+  }
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 23em;
+  }
+}
+
+@-webkit-keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+canvas {
+  position: absolute;
+  top: 0;
   left: 0;
-  bottom: 0;
-  width: 100%;
-  color: #062f4f;
-  text-align: center;
+  z-index: -1;
 }
-
-.navContainer {
-  display: block;
-  width: 100%;
-  height: 5.187vh;
-}
-
-.navContainer nav ul li a {
-  text-decoration: none;
-}
-
-.miniGames {
-  color: #062f4f;
-  text-decoration: none !important;
-  font-weight: bold;
-}
-
-.miniGames:hover {
-  color: #b82601;
-  opacity: 0.75;
-}
-
-.miniGameWraper {
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  bottom: 50%;
-}
-
-.projectCards{
-  margin-top: 12.5vh;
-  margin-left: 1.75vw;
-  margin-right: 1.75vw;
-}
-
-.sprintTags {
-  display: flex;
-  flex-direction: column;
-  color: #062f4f;
-  font-size: 20px;
-  padding-bottom: 0.5187vh;
-  text-decoration: none !important;
-}
-
-.externalLink {
-  display: flex;
-  flex-direction: column;
-  color: #062f4f;
-  font-size: 20px;
-  text-decoration: none;
-}
-
-#sprintTagsContainter {
-  text-align: center;
-}
-
-#sprintTagsList {
-  text-decoration: none;
-  position: absolute;
-  bottom: 25% !important;
-  margin: 0px !important;
-  text-align: center;
-  width: 100%;
-}
-
-#sprintTagsList a:hover {
-  color: #b82601;
-  opacity: 70%;
-}
+/*# sourceMappingURL=style.css.map */
