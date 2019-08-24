@@ -10,11 +10,11 @@
 /* 1. Globals */
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 html {
-  background-size: 700% 700%;
   text-align: center;
   font-family: 'Ma Shan Zheng', cursive;
   text-align: center;
   overflow: hidden;
+  background-color: #3b3c40;
 }
 
 .appBar {
@@ -23,6 +23,11 @@ html {
 
 body {
   margin: 0;
+}
+
+.noDecoration {
+  color: inherit;
+  text-decoration: none;
 }
 
 #app {
@@ -68,7 +73,6 @@ body {
   -ms-grid-column-span: 4;
   grid-area: header;
   font-size: 2em;
-  /* remove the padding on smaller screen sizes */
   padding-top: 2.5vh;
   padding-left: 25vw;
   padding-right: 25vw;
@@ -101,17 +105,104 @@ body {
   grid-area: main;
 }
 
-.placeholderImg {
+/* dev styling for testing functionality */
+.main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: main;
+}
+
+.typewriter {
+  padding: 0px;
   font-size: 2em;
   margin: 1em;
   padding: 1em;
 }
 
+/* Card */
+.cardMUI {
+  margin-top: 10vh;
+}
+
 /* 4. Projects */
+.projects {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: projects;
+}
+
+.formMUIContainer {
+  color: white;
+  grid-area: projects;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 450px;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: projects;
+  padding-bottom: 2.5vh;
+}
+
+.formMUIContainer .formMUI {
+  width: 450px;
+}
+
+.formMUIContainer .formMUI .two {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.formMUIContainer .formMUI .oneHalf {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.formMUIContainer .formMUI .one {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.formMUIContainer .formMUI .message {
+  width: 400px;
+  height: 3.5625em;
+}
+
+.insetDivider {
+  color: black;
+}
+
+.formMessage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 2em;
+  color: white;
+}
+
+.link:hover {
+  color: green;
+  opacity: 0.6;
+}
+
 /* Blank */
 .blank {
   grid-area: blank;
-  opacity: 0.3;
+  display: none;
 }
 
 .imageDrawer {
@@ -122,7 +213,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  height: 400px;
+  height: 450px;
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
@@ -137,17 +228,64 @@ body {
           box-shadow: 5px 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
+/* =============================
+ Form Styling of MU-UI form 
+  * nb styling is after
+    react components
+============================== */
+.MuiInputBase-root {
+  color: #c774e8;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+}
+
+.MuiFormLabel-root {
+  color: #ff6ad5;
+}
+
+.MuiFocused {
+  color: #8795e8;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: rgba(148, 208, 255, 0.23) !important;
+}
+
+.MuiButton-root {
+  color: #ad8cff;
+}
+
+.toolBar {
+  background-color: #c774e8;
+}
+
+.appBarText {
+  color: #94d0ff !important;
+}
+
+.appBarText :hover {
+  opacity: 0.5;
+}
+
+.appBarTitle {
+  cursor: pointer;
+  color: #94d0ff;
+}
+
+.appBarTitle:hover {
+  opacity: 0.5;
+}
+
 /* Google Fonts */
 /* Global */
 html {
-  min-height: 100%;
+  min-height: 50%;
   overflow: hidden;
 }
 
 body {
   color: rgba(255, 255, 255, 0.75);
   font-family: 'Anonymous Pro', monospace;
-  background-color: #191919;
 }
 
 .line-1 {
@@ -156,7 +294,7 @@ body {
   width: 2em;
   margin: 0 auto;
   border-right: 2px solid rgba(255, 255, 255, 0.75);
-  font-size: 180%;
+  font-size: 100%;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
@@ -175,7 +313,7 @@ body {
     width: 0;
   }
   to {
-    width: 24em;
+    width: 23em;
   }
 }
 
@@ -184,7 +322,7 @@ body {
     width: 0;
   }
   to {
-    width: 24em;
+    width: 23em;
   }
 }
 
@@ -204,5 +342,12 @@ body {
   to {
     border-right-color: transparent;
   }
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 /*# sourceMappingURL=style.css.map */
