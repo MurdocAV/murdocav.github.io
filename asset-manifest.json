@@ -1,14 +1,4 @@
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-  "main.js": "static/js/main.30f011ef.js",
-  "main.js.map": "static/js/main.30f011ef.js.map"
-=======
   "main.js": "static/js/main.4d31b9b0.js",
   "main.js.map": "static/js/main.4d31b9b0.js.map"
->>>>>>> 0b82a34cd8beb5512af1ce2a4cb31a65e9faa431
-=======
-  "main.js": "static/js/main.6c7877c5.js",
-  "main.js.map": "static/js/main.6c7877c5.js.map"
->>>>>>> eedfc25a5827729f4d6e722d25e0367cd16903f6
 }
