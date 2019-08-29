@@ -229,6 +229,9 @@ body {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> eedfc25a5827729f4d6e722d25e0367cd16903f6
 /* =============================
  Form Styling of MU-UI form 
   * nb styling is after
@@ -256,6 +259,7 @@ body {
   color: #ad8cff;
 }
 
+<<<<<<< HEAD
 .toolBar {
   background-color: #c774e8;
 }
@@ -263,13 +267,19 @@ body {
 .appBarText {
   color: #94d0ff !important;
 =======
+=======
+>>>>>>> eedfc25a5827729f4d6e722d25e0367cd16903f6
 .toolBar {
-  background-color: #40010D;
+  background-color: #c774e8;
 }
 
 .appBarText {
+<<<<<<< HEAD
   color: white !important;
 >>>>>>> 0b82a34cd8beb5512af1ce2a4cb31a65e9faa431
+=======
+  color: #94d0ff !important;
+>>>>>>> eedfc25a5827729f4d6e722d25e0367cd16903f6
 }
 
 .appBarText :hover {
@@ -279,10 +289,14 @@ body {
 .appBarTitle {
   cursor: pointer;
 <<<<<<< HEAD
+<<<<<<< HEAD
   color: #94d0ff;
 =======
   color: white;
 >>>>>>> 0b82a34cd8beb5512af1ce2a4cb31a65e9faa431
+=======
+  color: #94d0ff;
+>>>>>>> eedfc25a5827729f4d6e722d25e0367cd16903f6
 }
 
 .appBarTitle:hover {
@@ -364,7 +378,11 @@ canvas {
   z-index: -1;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*# sourceMappingURL=style.css.map */
 =======
 /*# sourceMappingURL=style.css.map */
 >>>>>>> 0b82a34cd8beb5512af1ce2a4cb31a65e9faa431
+=======
+/*# sourceMappingURL=style.css.map */
+>>>>>>> eedfc25a5827729f4d6e722d25e0367cd16903f6
