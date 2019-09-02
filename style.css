@@ -7,12 +7,28 @@
     3. Main content
 =============================== */
 /* 0. Mixins & Variables */
+/* Color Theme Swatches in RGBA */
 /* 1. Globals */
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 html {
   text-align: center;
   font-family: 'Ma Shan Zheng', cursive;
   text-align: center;
+  overflow: hidden;
+}
+
+body {
+  background-color: red;
+  /* SVG fallback for IE 9 (could be data URI, or could use filter) */
+  background-image: url(fallback-gradient.svg);
+  /* Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0 */
+  /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+  /* Firefox 3.6 - 15 */
+  /* Opera 11.1 - 12 */
+  /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+  background-image: -webkit-gradient(linear, left top, right top, from(red), to(#f06d06));
+  background-image: linear-gradient(to right, red, #f06d06);
+  margin: 0px;
   overflow: hidden;
 }
 
@@ -32,9 +48,8 @@ body {
 #app {
   display: -ms-grid;
   display: grid;
-  width: 100%;
   height: 100vh;
-      grid-template-areas: "header header header header" "main  main main main" "projects  projects projects projects";
+      grid-template-areas: "header header header header" "main main main main" "projects  projects projects projects";
   -ms-grid-rows: 1fr 2fr 4fr;
       grid-template-rows: 1fr 2fr 4fr;
   -ms-grid-columns: 1fr 2fr 4fr;
@@ -124,7 +139,115 @@ body {
   margin-top: 10vh;
 }
 
+.emailCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cardMUI.email {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.cardMUI.references {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.cardMUI.hire {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
 /* 4. Projects */
+.projects {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: projects;
+}
+
+.formMUIContainer {
+  color: white;
+  grid-area: projects;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 450px;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: projects;
+  padding-bottom: 2.5vh;
+}
+
+.formMUIContainer .formMUI {
+  width: 450px;
+}
+
+.formMUIContainer .formMUI .two {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.formMUIContainer .formMUI .oneHalf {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.formMUIContainer .formMUI .one {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.formMUIContainer .formMUI .message {
+  width: 400px;
+  height: 3.5625em;
+}
+
+.formMUIContainer .MuiButton-root {
+  color: #ad8cff;
+  background-color: rgba(0, 0, 0, 0.75) !important;
+}
+
+.insetDivider {
+  color: black;
+}
+
+.formMessage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 2em;
+  color: white;
+}
+
+.link:hover {
+  color: green;
+  opacity: 0.6;
+}
+
 /* Blank */
 .blank {
   grid-area: blank;
@@ -154,8 +277,32 @@ body {
           box-shadow: 5px 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
+/* =============================
+ Form Styling of MU-UI form 
+  * nb styling is after
+    react components
+============================== */
+.MuiInputBase-root {
+  color: #ff6ad5;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.MuiFormLabel-root {
+  color: #ff6ad5;
+}
+
+.MuiFocused {
+  color: #8795e8;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: rgba(148, 208, 255, 0.23) !important;
+}
+
 .toolBar {
-  background-color: #40010D;
+  background-color: #000000;
 }
 
 .appBarText {
@@ -163,7 +310,7 @@ body {
 }
 
 .appBarText :hover {
-  opacity: 0.5;
+  opacity: 0.65;
 }
 
 .appBarTitle {
@@ -172,7 +319,7 @@ body {
 }
 
 .appBarTitle:hover {
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 /* Google Fonts */
@@ -183,7 +330,7 @@ html {
 }
 
 body {
-  color: rgba(255, 255, 255, 0.75);
+  color: #000000;
   font-family: 'Anonymous Pro', monospace;
 }
 
