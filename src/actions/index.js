@@ -1,15 +1,15 @@
-export const ACTIVE_PAGE = 'ACTIVE_PAGE'
-export const UPDATE_PAGE = 'UPDATE_PAGE'
+export const ACTIVE_THEME = 'ACTIVE_THEME'
+export const UPDATE_THEME = 'UPDATE_THEME'
 
 export function activePage () {
   return {
-    type: ACTIVE_PAGE,
+    type: ACTIVE_THEME,
   }
 }
 
 export function goToPage (page) {
   return {
-    type: UPDATE_PAGE,
+    type: UPDATE_THEME,
     page
   }
 }

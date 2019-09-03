@@ -1,11 +1,11 @@
 const tileData = [
   {
-    img: '/images/LukeMitchells.png',
-    title: 'Luke Mitchells',
-    author: 'MurdocAV',
-    cols: 2,
-    featured: true,
-    url: 'https://github.com/MurdocAV/Audio-Engineers-Portfolio-2019-Revisited'
+  img: '/images/ReFlick.png',
+  title: 'ReFlick',
+  author: 'Azaan Virk, Alice Gatland, John Tapsel, Struant Wall, Eve Henare',
+  cols: 2,
+  featured: true,
+  url: 'https://github.com/MurdocAV/ReFlick'
   },
   {
     img: '/images/DrinksRecomendation.png',
@@ -21,12 +21,12 @@ const tileData = [
     url: 'https://github.com/MurdocAV/PokeName'
   },
   {
-    img: '/images/ReFlick.png',
-    title: 'ReFlick',
-    author: 'Azaan Virk, Alice Gatland, John Tapsel, Struant Wall, Eve Henare',
+    img: '/images/LukeMitchells.png',
+    title: 'Luke Mitchells',
+    author: 'MurdocAV',
     cols: 2,
     featured: true,
-    url: 'https://github.com/MurdocAV/ReFlick'
+    url: 'https://github.com/MurdocAV/Audio-Engineers-Portfolio-2019-Revisited'
   }
 ]
 
