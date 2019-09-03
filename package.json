@@ -4,14 +4,12 @@
   "private": true,
   "homepage": "https://murdocav.github.io/",
   "dependencies": {
-    "animejs": "3.0.1",
     "gh-pages": "^2.0.1",
     "react": "^16.8.6",
     "react-redux": "^7.1.0",
-    "react-bootstrap": "1.0.0-beta.9",
     "react-dom": "^16.8.6",
-    "react-router-dom": "5.0.1",
-    "react-scripts": "0.9.5"
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "^0.9.5"
   },
   "devDependencies": {
     "react-dom": "^16.8.6",

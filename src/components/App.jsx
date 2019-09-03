@@ -13,6 +13,9 @@ import Hiring from './Pages/Hiring'
 import Example from './Pages/Example/Example'
 import Header from './Appbar/Header'
 
+import {activePage, goToPage} from '../actions/index'
+
+
 //TODO: Test out Material U.I.; 
 //  1. Use Material's grid to make layered mobile first Responsive U.I.
 //  1.1. Allow user to see the mobile view on desktop
@@ -22,6 +25,12 @@ import Header from './Appbar/Header'
 
 
 class App extends React.Component {
+
+  // Working for modifying state in the redux store but does not actually go to any pages.
+  switchPage = (pageName) =>  {
+    const {dispatch} = this.props
+    dispatch(goToPage(pageName))
+  }
   
   render () {
     // Ensures that the animation is always smooth, runnning everytime the render method is called.
