@@ -1,3 +1,3 @@
-[View live deployment](murdocav.github.io)
+[View live deployment](https://murdocav.github.io/#/)
 
 This branch is the offical deployment of murdocav.github.io
