@@ -54,7 +54,7 @@ export default function DocumentationCard(props) {
             </div>
         </Typography>
         <Typography className={classes.pos} color="textSecondary">
-            Teamwork: Peer Programming, Feedback, Active Listening, Git, GitHub - Projects, Pulls, Terminal|
+            Teamwork: Peer Programming, Feedback, Active Listening, Git, GitHub - Projects, Pulls, Terminal.<br/>
             Agile: Scrum, Stand ups, Retrospectives.
         </Typography>
         <Typography variant="body2" component="p">
