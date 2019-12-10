@@ -1,9 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Ma+Shan+Zheng&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cinzel&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Special+Elite&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
 /* ===============================
   Contents:
     0. Mixins & Variables
     1. Globals
     2. Navigation
+      2.1 Mobile Rendering
     3. Main content
 =============================== */
 /* 0. Mixins & Variables */
@@ -82,36 +88,116 @@ body {
 }
 
 /* 2. Navigation */
-.navigation {
+.header {
+  padding-top: 1vh;
+  padding-bottom: 2.5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-area: header;
-  font-size: 2em;
-  padding-top: 2.5vh;
-  padding-left: 25vw;
-  padding-right: 25vw;
+  /* Grid for the navigation bar only */
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+      grid-template-areas: "title gap gap nav";
+  grid-gap: 1em;
+}
+
+/* Links */
+.nav {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: nav;
+  display: inline;
+  padding-top: 3vh;
+  padding-bottom: 2.5vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
-.navigation a {
-  color: #90b974;
+.Link {
+  font-size: 1.2rem;
+  margin-left: 1.4vw;
+  text-transform: uppercase;
+}
+
+.Link {
+  color: #f2f2f2;
+  opacity: 1;
+  text-align: right;
   text-decoration: none;
 }
 
-.navigation a:hover {
-  color: #A1FFD2;
-  opacity: 0.7;
+.home .Link {
+  margin-left: 45.0vw;
 }
 
-.navigation .active {
-  color: #5a7449;
+.contact, .home {
+  text-align: center;
 }
 
+.contact h1, .home h1 {
+  position: relative;
+  top: calc(+17.5vh + 2.5em);
+  color: pink;
+}
+
+.active {
+  color: #000000;
+}
+
+.Link.grow {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.Link.grow.active {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  color: #000000;
+}
+
+.Link:hover {
+  color: gray;
+}
+
+/* Title */
+.title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: title;
+}
+
+.titleHeader {
+  float: left;
+  margin-left: 2.0vw;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.header .title {
+  font-family: 'Special Elite', cursive;
+}
+
+.header .nav {
+  font-family: 'Permanent Marker', cursive;
+}
+
+/* 2.1 Mobile Rendering */
 /* 3. Main component */
 .mainComponent {
   -ms-grid-row: 2;
@@ -129,6 +215,7 @@ body {
 }
 
 .typewriter {
+  font-family: 'Press Start 2P', cursive;
   padding: 0px;
   font-size: 2em;
   margin: 1em;
@@ -166,6 +253,22 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.cardMUI.about {
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.cardMUI.documentation {
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
   -ms-flex-line-pack: center;
       align-content: center;
 }
