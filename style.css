@@ -24,6 +24,27 @@ html {
   overflow-y: scroll;
 }
 
+.cardsCombined {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: 32vw 32vw 32vw;
+      grid-template-columns: 32vw 32vw 32vw;
+  /*Make the grid smaller than the container*/
+  grid-gap: 1vw;
+  padding: 1vw;
+}
+
+.cardExternal {
+  text-align: center;
+}
+
+.cardInternal {
+  margin: auto;
+}
+
 body {
   background-color: red;
   /* SVG fallback for IE 9 (could be data URI, or could use filter) */
@@ -199,6 +220,11 @@ body {
 
 /* 2.1 Mobile Rendering */
 /* 3. Main component */
+.cardInternal {
+  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
 .mainComponent {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -297,13 +323,13 @@ body {
 }
 
 .projectsIcon.grow {
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all .225s ease-in-out;
+  transition: all .225s ease-in-out;
 }
 
 .projectsIcon.grow:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.55);
+          transform: scale(1.55);
 }
 
 .gitHubLogo {
