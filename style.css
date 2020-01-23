@@ -46,8 +46,11 @@ html {
 }
 
 .internalActionArea {
+  height: 240px;
+}
+
+.cardExternal {
   margin-bottom: 20px;
-  min-height: 232.5px;
 }
 
 body {
@@ -595,7 +598,10 @@ body {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 550px) {
+  html {
+    overflow: scroll;
+  }
   .formMUIContainer {
     color: white;
     grid-area: projects;
