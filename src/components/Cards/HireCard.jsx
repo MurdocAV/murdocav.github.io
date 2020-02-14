@@ -41,7 +41,7 @@ export default function HireCard(props) {
         <Typography className={classes.pos} color="textSecondary">
         </Typography>
         <Typography variant="body2" component="p">
-          All the best with your adventures.
+          Don't hesitate, let's talk and start to create.
         </Typography>
       </CardContent>
       <CardActions>
