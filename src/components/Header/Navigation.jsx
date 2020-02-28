@@ -3,11 +3,20 @@ import {NavLink, IndexLink} from 'react-router-dom'
 
 class Navigation  extends React.Component {
 
+    constructor () {
+        super ()
+
+        this.state = {
+            title: "Azaan Virk"
+        }
+
+    }
+
     render() {
         return (
-            <div className="header">
+            <div className="header navigation">
                 <div className="title">
-                    <h1 className="titleHeader">Azaan Virk</h1>
+                    <h1 className="titleHeader">{this.state.title}</h1>
                 </div>
                 <div className="nav">
                     <NavLink className="home Link grow" activeClassName="active" to={'/Home'}>Home</NavLink>
@@ -26,5 +35,6 @@ class Navigation  extends React.Component {
         )
     }
 }
+
 
 export default Navigation
