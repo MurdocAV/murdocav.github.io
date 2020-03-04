@@ -1,5 +1,5 @@
 import React from 'react'
-import {NavLink, IndexLink} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 
 class Navigation  extends React.Component {
 
@@ -23,7 +23,8 @@ class Navigation  extends React.Component {
                     <NavLink
                         className="about Link grow"
                         activeClassName="active"
-                        to={'/About'}>About</NavLink>
+                        to={'/About'}>About
+                    </NavLink>
                     <NavLink className="projects Link grow" activeClassName="active" to={'/Projects'}>Projects</NavLink>
                     <NavLink className="exampleForm Link grow" activeClassName="active" to={'/ExampleForm'}>Example Form</NavLink>
                     <NavLink className="references Link grow" activeClassName="active" to={'/References'}>References</NavLink>
